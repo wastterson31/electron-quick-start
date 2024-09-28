@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Primer programa</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h1>Equipo de Trabajo 1</h1>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="./img/Alvaro.jpg" alt="Foto de Alvaro" class="member-photo" />
+        <p>Alvaro</p>
+        <p>Manejo: posgresql, laragon, php, MySQL</p>
+      </div>
+      <div class="team-member">
+        <img src="./img/Jairo.jpg" alt="Foto de Jairo" class="member-photo" />
+        <p>Jairo</p>
+        <p>Manejo: Manejo: PHP, Bootstrap, MySQL, Fri fayer</p>
+      </div>
+      <div class="team-member">
+        <img src="./img/Owen.jpg" alt="Foto de Owen" class="member-photo" />
+        <p>Owen</p>
+        <p>Manejo: Laravel, PHP, Bootstrap, pgAdmin</p>
+      </div>
+      <div class="team-member">
+        <img
+          src="./img/foto1.jpg"
+          alt="Foto del Cuarto Integrante"
+          class="member-photo"
+        />
+        <p>Wastterson</p>
+        <p>
+          Manejo: Laravel, MySQL, HTML/CSS, Python, Kotlin, Flutter, Java,
+          JavaScript, php, Bootstrap
+        </p>
+      </div>
+    </div>
 
-    <!-- You can also require other files to run in this process -->
+    <button id="btn-sm">Mirar Sistemas</button>
+    <div id="message-container"></div>
+
     <script src="./renderer.js"></script>
   </body>
 </html>
